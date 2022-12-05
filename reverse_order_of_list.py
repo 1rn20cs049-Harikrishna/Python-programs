@@ -1,13 +1,17 @@
 num = int(input()) #list size
 list_a = [] #creating a empty list
-
+list_b = []
 for i in range(0,num):
     context = input()
     list_a.append(context) #adding the elements to the list by using append
+
+for i in range(len(list_a)-1,-1,-1):
+    list_b.append(list_a[i])
+print(list_b)
     
-for i in range(num-1,0,-1): #printing all elements except first element
-    print(list_a[i])
-    
-print(list_a[0]) #printing first element of list(that is before reversing)
+
+
+# OR 
+#print(num[::-1]) # it will reverse the list
     
     
